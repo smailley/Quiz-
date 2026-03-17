@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { generateQuestion } from '../services/ollamaService';
+import { supabase } from './supabaseConfig';
 
 const useQuiz = () => {
   const [question, setQuestion] = useState<any>(null);
