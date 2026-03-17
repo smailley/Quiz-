@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { generateQuestion } from '../services/ollamaService';
-import { supabase } from './supabaseConfig';
 
 const useQuiz = () => {
   const [question, setQuestion] = useState<any>(null);
@@ -37,7 +36,19 @@ const useQuiz = () => {
     }
   };
 
-  return { question, score, streak, isPremium, answerQuestion };
+  const calculateRanking = () => {
+    // Implemente a lógica de ranking aqui
+    return Math.round((score / (streak * question.points)) * 100);
+  };
+
+  return { 
+    question, 
+    score, 
+    streak, 
+    isPremium, 
+    answerQuestion, 
+    calculateRanking 
+  };
 };
 
 export default useQuiz;
