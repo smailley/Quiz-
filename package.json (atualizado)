@@ -1,0 +1,33 @@
+{
+  "name": "quiz-app",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js", // Adicione a vírgula aqui
+  "scripts": {
+    "start": "expo start"
+  },
+  "dependencies": {
+    "@react-native-community/masked-view": "^0.6.2",
+    "@react-navigation/native": "^5.9.4",
+    "@react-navigation/stack": "^5.14.8",
+    "axios": "^0.21.1",
+    "expo": "~43.0.0",
+    "expo-status-bar": "~1.2.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-native": "0.64.3",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-reanimated": "^2.3.1",
+    "react-native-safe-area-context": "^3.3.2",
+    "react-native-screens": "^3.10.1",
+    "react-native-webview": "11.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.14.6",
+    "@babel/runtime": "~7.14.6",
+    "@react-native-community/eslint-config": "^3.0.0",
+    "@types/react": "~17.0.21",
+    "@types/react-native": "~0.64.12",
+    "eslint": "^7.28.0",
+    "metro-react-native-babel-preset": "0.64.0"
+  }
+}
